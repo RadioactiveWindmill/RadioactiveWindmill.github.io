@@ -48,12 +48,12 @@ See my printables links below
 </head>
 <body>
     <header>
-        <h1>Welcome to My Simple Website</h1>
+        <h1>Welcome find my Links here!</h1>
     </header>
 
     <nav>
-        <a href="https://www.example.com">Example Link 1</a>
-        <a href="https://www.anotherexample.com">Example Link 2</a>
+        <a href="https://www.printables.com/@radio_windmil_870141/models">Printables</a>
+        <a href="[https://www.youtube.com/channel/UCWNVbuA2zqBBzQqIyS51RNg">]Youtube</a>
     </nav>
 
     <main>
@@ -62,8 +62,5 @@ See my printables links below
         <img src="https://via.placeholder.com/400x600" alt="Placeholder Image 2">
     </main>
 
-    <footer>
-        <p>&copy; 2024 Simple Website</p>
-    </footer>
 </body>
 </html>
