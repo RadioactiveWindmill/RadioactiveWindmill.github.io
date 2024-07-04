@@ -53,7 +53,7 @@
 
     <main>
         <h2>Images</h2>
-        <img src="https://via.placeholder.com/600x400" alt="Placeholder Image 1">
+        <img src="https://github.com/RadioactiveWindmill/RadioactiveWindmill.github.io/blob/main/Images/IMG-20240704-WA0016.jpg" alt="X1C">
         <img src="https://via.placeholder.com/400x600" alt="Placeholder Image 2">
     </main>
 
