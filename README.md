@@ -46,6 +46,7 @@
     </header>
 
     <nav>
+<h3>Contact me on discord for questions and tips: Vliegtuigje aka Space</h3>
         <a href="https://www.printables.com/@radio_windmil_870141/models">Printables</a>
         <a href="https://www.youtube.com/channel/UCWNVbuA2zqBBzQqIyS51RNg">Youtube</a>
     </nav>
