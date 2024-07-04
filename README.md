@@ -40,7 +40,6 @@
             bottom: 0;
         }
     </style>
-</head>
 <body>
     <header>
         <h1>Welcome find my Links here!</h1>
