@@ -55,7 +55,7 @@
         <h2>My printer/automatic hot glue gun</h2>
         <img src="https://raw.githubusercontent.com/RadioactiveWindmill/RadioactiveWindmill.github.io/main/Images/IMG-20240704-WA0016.jpg" alt="X1C">
         <h2>Profile picture</h2>
-        <img src="https://via.placeholder.com/400x600" alt="Placeholder Image 2">
+        <img src="https://raw.githubusercontent.com/RadioactiveWindmill/RadioactiveWindmill.github.io/main/Images/IMG_7550.png" alt="Profile picture">
     </main>
 
 </body>
