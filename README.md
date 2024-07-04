@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+Hi! I'm Radioactive Windmill and I make Nerf stuff.
+See my printables links below
 <html lang="en">
 <head>
     <meta charset="UTF-8">
