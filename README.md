@@ -68,21 +68,15 @@
         /* Left-side collapsible menu */
         .side-menu {
             height: 100%;
-            width: 0;
+            width: 250px; /* Set the width of the side menu */
             position: fixed;
-            z-index: 1;
             top: 0;
             left: 0;
             background-color: #333;
             overflow-x: hidden;
-            transition: 0.5s;
             padding-top: 60px;
-            /* Fixed position for the side menu */
-            position: fixed;
-            /* Ensuring it stays in place */
-            height: 100%;
-            width: 250px;
-            background-color: #333;
+            z-index: 1;
+            /* Ensure the menu stays fixed on the page */
         }
         .side-menu a {
             padding: 15px 25px;
