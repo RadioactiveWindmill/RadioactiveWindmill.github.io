@@ -68,7 +68,7 @@
         /* Left-side collapsible menu */
         .side-menu {
             height: 100%;
-            width: 250px; /* Set the width of the side menu */
+            width: 250px;
             position: fixed;
             top: 0;
             left: 0;
@@ -76,7 +76,7 @@
             overflow-x: hidden;
             padding-top: 60px;
             z-index: 1;
-            /* Ensure the menu stays fixed on the page */
+            transition: width 0.5s ease;
         }
         .side-menu a {
             padding: 15px 25px;
@@ -109,6 +109,9 @@
             top: 60px;
             left: 10px;
             z-index: 2;
+        }
+        .open-side-menu-btn.hidden {
+            display: none;
         }
         .open-side-menu-btn:hover {
             background-color: #555;
@@ -169,8 +172,8 @@
     <!-- Side Menu -->
     <div id="side-menu" class="side-menu">
         <a href="javascript:void(0)" class="close-btn" onclick="closeSideMenu()">&times;</a>
+        <a href="#">Link 1</a>
         <a href="/lonx">My Lonx</a>
-        <a href="#">Link 2</a>
         <a href="#">Link 3</a>
         <a href="#">Link 4</a>
         <a href="#">Link 5</a>
@@ -180,7 +183,7 @@
     </div>
 
     <!-- Button to open the side menu -->
-    <button class="open-side-menu-btn" onclick="openSideMenu()">Collection</button>
+    <button id="open-side-menu-btn" class="open-side-menu-btn" onclick="toggleSideMenu()">Collection</button>
 
     <main>
         <h2>My Printer/Automatic Hot Glue Gun</h2>
@@ -199,13 +202,23 @@
             }
         }
 
-        function openSideMenu() {
-            document.getElementById("side-menu").style.width = "250px";
+        function toggleSideMenu() {
+            var sideMenu = document.getElementById("side-menu");
+            var openButton = document.getElementById("open-side-menu-btn");
+            if (sideMenu.style.width === "250px") {
+                sideMenu.style.width = "0";
+                openButton.classList.remove("hidden");
+            } else {
+                sideMenu.style.width = "250px";
+                openButton.classList.add("hidden");
+            }
         }
 
         function closeSideMenu() {
             document.getElementById("side-menu").style.width = "0";
+            document.getElementById("open-side-menu-btn").classList.remove("hidden");
         }
     </script>
 </body>
 </html>
+
