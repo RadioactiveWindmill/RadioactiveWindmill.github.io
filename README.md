@@ -46,15 +46,6 @@
             max-width: 100%;
             height: auto;
         }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
     </style>
 <body>
     <header>
@@ -66,7 +57,7 @@
         <button class="menu-btn" onclick="toggleMenu()">Menu</button>
         <div id="menu-content" class="menu-content">
             <a href="https://www.printables.com/@radio_windmil_870141/models">Link 1 - Printables</a>
-            <a href="#">Link 2</a>
+            <a href="https://www.printables.com/model/785737-40-max-shell-40max-nerf-shells-the-stamppot-shells">40max Shell Project</a>
             <a href="#">Link 3</a>
             <a href="#">Link 4</a>
         </div>
@@ -78,10 +69,6 @@
         <h2>Profile picture</h2>
         <img src="https://raw.githubusercontent.com/RadioactiveWindmill/RadioactiveWindmill.github.io/main/Images/IMG_7550.png" alt="Profile picture">
     </main>
-
-    <footer>
-        <p>Footer Content</p>
-    </footer>
 
     <script>
         function toggleMenu() {
@@ -95,5 +82,6 @@
     </script>
 </body>
 </html>
+
 
 
