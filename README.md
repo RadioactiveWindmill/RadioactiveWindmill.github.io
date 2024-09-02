@@ -1,4 +1,9 @@
+<!DOCTYPE html>
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
     <style>
         body {
             font-family: 'Helvetica Neue', Arial, sans-serif;
@@ -23,10 +28,6 @@
         h1 {
             margin: 0;
             font-size: 2.5em;
-        }
-        nav {
-            background-color: rgba(0, 0, 0, 0.8);
-            color: white;
         }
         .menu-btn {
             background-color: #333;
@@ -78,6 +79,10 @@
             padding-top: 60px;
             /* Fixed position for the side menu */
             position: fixed;
+            /* Ensuring it stays in place */
+            height: 100%;
+            width: 250px;
+            background-color: #333;
         }
         .side-menu a {
             padding: 15px 25px;
@@ -138,17 +143,6 @@
             margin-bottom: 20px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
         }
-        footer {
-            background-color: rgba(0, 0, 0, 0.8);
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-            font-size: 14px;
-            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.5);
-        }
 
         @keyframes gradientAnimation {
             0% {
@@ -162,6 +156,7 @@
             }
         }
     </style>
+</head>
 <body>
     <header>
         <h1>Welcome! Find My Links Here</h1>
@@ -199,10 +194,6 @@
         <h2>Profile Picture</h2>
         <img src="https://raw.githubusercontent.com/RadioactiveWindmill/RadioactiveWindmill.github.io/main/Images/IMG_7550.png" alt="Profile Picture">
     </main>
-
-    <footer>
-        <p>&copy; 2024 RadioactiveWindmill. All rights reserved.</p>
-    </footer>
 
     <script>
         function toggleMenu() {
