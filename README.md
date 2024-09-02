@@ -84,7 +84,58 @@
         img {
             max-width: 80%;
             height: auto;
-            border-radius: 10
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        }
+        footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            font-size: 14px;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+<body>
+    <header>
+        <h1>Welcome! Find My Links Here</h1>
+    </header>
 
+    <nav>
+        <button class="menu-btn" onclick="toggleMenu()">Explore My Projects</button>
+        <div id="menu-content" class="menu-content">
+            <a href="https://www.printables.com/@radio_windmil_870141/models">Link 1 - Printables</a>
+            <a href="https://www.printables.com/model/785737-40-max-shell-40max-nerf-shells-the-stamppot-shells">40max Shell Project</a>
+            <a href="#">Link 3</a>
+            <a href="#">Link 4</a>
+        </div>
+    </nav>
 
+    <main>
+        <h2>My Printer/Automatic Hot Glue Gun</h2>
+        <img src="https://raw.githubusercontent.com/RadioactiveWindmill/RadioactiveWindmill.github.io/main/Images/IMG-20240704-WA0016.jpg" alt="X1C">
+        <h2>Profile Picture</h2>
+        <img src="https://raw.githubusercontent.com/RadioactiveWindmill/RadioactiveWindmill.github.io/main/Images/IMG_7550.png" alt="Profile Picture">
+    </main>
+
+    <footer>
+        <p>&copy; 2024 RadioactiveWindmill. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var menuContent = document.getElementById("menu-content");
+            if (menuContent.style.display === "block") {
+                menuContent.style.display = "none";
+            } else {
+                menuContent.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
 
