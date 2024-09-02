@@ -1,60 +1,102 @@
 <html lang="en">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #ffA500;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
         }
         header {
+            background-color: #004080;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
             background-color: #333;
             color: white;
-            padding: 10px 0;
-            text-align: center;
         }
         .menu-btn {
-            background-color: #333;
+            background-color: #444;
             color: white;
-            padding: 10px;
+            padding: 15px;
             border: none;
             cursor: pointer;
             width: 100%;
-            text-align: left;
-            font-size: 18px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            border-bottom: 1px solid #555;
+            transition: background-color 0.3s ease;
+        }
+        .menu-btn:hover {
+            background-color: #555;
         }
         .menu-content {
             display: none;
-            background-color: #444;
+            background-color: #333;
             overflow: hidden;
             transition: max-height 0.3s ease-out;
+            border-bottom: 1px solid #444;
         }
         .menu-content a {
             display: block;
-            padding: 10px;
+            padding: 15px;
             color: white;
             text-decoration: none;
-            background-color: #555;
+            font-size: 18px;
+            border-bottom: 1px solid #444;
+            transition: background-color 0.3s ease;
         }
         .menu-content a:hover {
-            background-color: #666;
+            background-color: #555;
         }
         main {
-            padding: 20px;
+            padding: 40px;
             text-align: center;
+            background-color: #fff;
+            max-width: 1200px;
+            margin: 20px auto;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        main h2 {
+            color: #004080;
+            margin-bottom: 20px;
+            font-size: 2em;
         }
         img {
-            max-width: 100%;
+            max-width: 80%;
             height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #004080;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            font-size: 14px;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
         }
     </style>
 <body>
     <header>
-        <h1>Welcome, find my Links here!</h1>
+        <h1>Welcome! Find My Links Here</h1>
     </header>
 
     <nav>
-        <h3>Contact me on discord for questions and tips: Vliegtuigje aka Space</h3>
-        <button class="menu-btn" onclick="toggleMenu()">Menu</button>
+        <button class="menu-btn" onclick="toggleMenu()">Explore My Projects</button>
         <div id="menu-content" class="menu-content">
             <a href="https://www.printables.com/@radio_windmil_870141/models">Link 1 - Printables</a>
             <a href="https://www.printables.com/model/785737-40-max-shell-40max-nerf-shells-the-stamppot-shells">40max Shell Project</a>
@@ -64,11 +106,15 @@
     </nav>
 
     <main>
-        <h2>My printer/automatic hot glue gun</h2>
+        <h2>My Printer/Automatic Hot Glue Gun</h2>
         <img src="https://raw.githubusercontent.com/RadioactiveWindmill/RadioactiveWindmill.github.io/main/Images/IMG-20240704-WA0016.jpg" alt="X1C">
-        <h2>Profile picture</h2>
-        <img src="https://raw.githubusercontent.com/RadioactiveWindmill/RadioactiveWindmill.github.io/main/Images/IMG_7550.png" alt="Profile picture">
+        <h2>Profile Picture</h2>
+        <img src="https://raw.githubusercontent.com/RadioactiveWindmill/RadioactiveWindmill.github.io/main/Images/IMG_7550.png" alt="Profile Picture">
     </main>
+
+    <footer>
+        <p>&copy; 2024 RadioactiveWindmill. All rights reserved.</p>
+    </footer>
 
     <script>
         function toggleMenu() {
