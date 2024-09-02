@@ -4,17 +4,11 @@
             font-family: 'Helvetica Neue', Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(45deg, #222, #ff6600, #222);
-            background-size: 400% 400%;
-            animation: gradientAnimation 15s ease infinite;
+            background-color: #222;
             color: #e0e0e0;
             line-height: 1.6;
-        }
-
-        @keyframes gradientAnimation {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
+            overflow-x: hidden;
+            position: relative;
         }
 
         header {
@@ -125,6 +119,8 @@
             margin: 20px auto;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
             border-radius: 10px;
+            position: relative;
+            z-index: 1;
         }
         main h2 {
             color: #ff6600;
@@ -148,6 +144,64 @@
             bottom: 0;
             font-size: 14px;
             box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Bubble animation */
+        .bubble {
+            position: absolute;
+            bottom: -100px;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 102, 0, 0.6);
+            border-radius: 50%;
+            animation: bubbleAnimation 15s infinite ease-in;
+            opacity: 0.8;
+        }
+
+        .bubble:nth-child(2) {
+            left: 20%;
+            width: 60px;
+            height: 60px;
+            animation-duration: 18s;
+            animation-delay: 2s;
+        }
+
+        .bubble:nth-child(3) {
+            left: 40%;
+            width: 20px;
+            height: 20px;
+            animation-duration: 10s;
+            animation-delay: 4s;
+        }
+
+        .bubble:nth-child(4) {
+            left: 60%;
+            width: 50px;
+            height: 50px;
+            animation-duration: 12s;
+            animation-delay: 6s;
+        }
+
+        .bubble:nth-child(5) {
+            left: 80%;
+            width: 30px;
+            height: 30px;
+            animation-duration: 20s;
+            animation-delay: 8s;
+        }
+
+        @keyframes bubbleAnimation {
+            0% {
+                bottom: -100px;
+                transform: translateX(0) scale(1);
+            }
+            50% {
+                transform: translateX(20px) scale(1.2);
+            }
+            100% {
+                bottom: 100%;
+                transform: translateX(-30px) scale(1);
+            }
         }
     </style>
 <body>
@@ -181,6 +235,13 @@
     <!-- Button to open the side menu -->
     <button class="open-side-menu-btn" onclick="openSideMenu()">Collection</button>
 
+    <!-- Bubble Animation -->
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+
     <main>
         <h2>My Printer/Automatic Hot Glue Gun</h2>
         <img src="https://raw.githubusercontent.com/RadioactiveWindmill/RadioactiveWindmill.github.io/main/Images/IMG-20240704-WA0016.jpg" alt="X1C">
@@ -207,8 +268,4 @@
         }
 
         function closeSideMenu() {
-            document.getElementById("side-menu").style.width = "0";
-        }
-    </script>
-</body>
-</html>
+            document.getElementById("side
