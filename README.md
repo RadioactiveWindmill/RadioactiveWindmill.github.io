@@ -273,6 +273,60 @@
 
     <!-- Side Menu -->
     <div id="side-menu" class="side-menu">
-        <a href="javascript:void(
+        <a href="javascript:void(0)" class="close-btn" onclick="closeSideMenu()">&times;</a>
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+        <a href="#">Link 4</a>
+        <a href="#">Link 5</a>
+        <a href="#">Link 6</a>
+        <a href="#">Link 7</a>
+        <a href="#">Link 8</a>
+    </div>
 
+    <!-- Button to open the side menu -->
+    <button class="open-side-menu-btn" onclick="openSideMenu()">Collection</button>
 
+    <!-- Bubble Animation -->
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+
+    <main>
+        <h2>My Printer/Automatic Hot Glue Gun</h2>
+        <img src="https://raw.githubusercontent.com/RadioactiveWindmill/RadioactiveWindmill.github.io/main/Images/IMG-20240704-WA0016.jpg" alt="X1C">
+        <h2>Profile Picture</h2>
+        <img src="https://raw.githubusercontent.com/RadioactiveWindmill/RadioactiveWindmill.github.io/main/Images/IMG_7550.png" alt="Profile Picture">
+    </main>
+
+    <footer>
+        <p>&copy; 2024 RadioactiveWindmill. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var menuContent = document.getElementById("menu-content");
+            if (menuContent.style.display === "block") {
+                menuContent.style.display = "none";
+            } else {
+                menuContent.style.display = "block";
+            }
+        }
+
+        function openSideMenu() {
+            document.getElementById("side-menu").style.width = "250px";
+        }
+
+        function closeSideMenu() {
+            document.getElementById("side-menu").style.width = "0";
+        }
+    </script>
+</body>
+</html>
