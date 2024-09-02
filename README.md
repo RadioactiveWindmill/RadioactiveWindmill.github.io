@@ -1,4 +1,3 @@
-
 <html lang="en">
     <style>
         body {
@@ -13,50 +12,36 @@
             padding: 10px 0;
             text-align: center;
         }
-        nav {
-            margin: 10px 0;
-            text-align: center;
+        .menu-btn {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            text-align: left;
+            font-size: 18px;
         }
-        nav a {
-            margin: 0 15px;
+        .menu-content {
+            display: none;
+            background-color: #444;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        .menu-content a {
+            display: block;
+            padding: 10px;
+            color: white;
             text-decoration: none;
-            color: #333;
+            background-color: #555;
+        }
+        .menu-content a:hover {
+            background-color: #666;
         }
         main {
             padding: 20px;
             text-align: center;
         }
         img {
-            max-width: 100%;
-            height: auto;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-    </style>
-<body>
-    <header>
-        <h1>Welcome find my Links here!</h1>
-    </header>
+            max-width:
 
-    <nav>
-<h3>Contact me on discord for questions and tips: Vliegtuigje aka Space</h3>
-        <a href="https://www.printables.com/@radio_windmil_870141/models">Printables</a>
-        <a href="https://www.youtube.com/channel/UCWNVbuA2zqBBzQqIyS51RNg">Youtube</a>
-    </nav>
-
-    <main>
-        <h2>My printer/automatic hot glue gun</h2>
-        <img src="https://raw.githubusercontent.com/RadioactiveWindmill/RadioactiveWindmill.github.io/main/Images/IMG-20240704-WA0016.jpg" alt="X1C">
-        <h2>Profile picture</h2>
-        <img src="https://raw.githubusercontent.com/RadioactiveWindmill/RadioactiveWindmill.github.io/main/Images/IMG_7550.png" alt="Profile picture">
-    </main>
-
-</body>
-</html>
