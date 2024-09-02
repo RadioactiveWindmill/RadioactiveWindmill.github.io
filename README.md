@@ -4,11 +4,13 @@
             font-family: 'Helvetica Neue', Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #222;
             color: #e0e0e0;
             line-height: 1.6;
             overflow-x: hidden;
             position: relative;
+            background: linear-gradient(135deg, #000000 0%, #ff6600 100%);
+            background-size: 200% 200%;
+            animation: gradientAnimation 15s ease infinite;
         }
 
         header {
@@ -146,113 +148,15 @@
             box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.5);
         }
 
-        /* Bubble animation */
-        .bubble {
-            position: absolute;
-            bottom: -100px;
-            width: 40px;
-            height: 40px;
-            background-color: rgba(255, 102, 0, 0.6);
-            border-radius: 50%;
-            opacity: 0.7;
-            animation: bubbleAnimation 15s infinite ease-in-out;
-        }
-
-        .bubble:nth-child(2) {
-            left: 10%;
-            width: 60px;
-            height: 60px;
-            background-color: rgba(255, 102, 0, 0.5);
-            animation-duration: 18s;
-            animation-delay: 2s;
-        }
-
-        .bubble:nth-child(3) {
-            left: 30%;
-            width: 30px;
-            height: 30px;
-            background-color: rgba(255, 102, 0, 0.4);
-            animation-duration: 12s;
-            animation-delay: 4s;
-        }
-
-        .bubble:nth-child(4) {
-            left: 50%;
-            width: 50px;
-            height: 50px;
-            background-color: rgba(255, 102, 0, 0.3);
-            animation-duration: 14s;
-            animation-delay: 6s;
-        }
-
-        .bubble:nth-child(5) {
-            left: 70%;
-            width: 20px;
-            height: 20px;
-            background-color: rgba(255, 102, 0, 0.6);
-            animation-duration: 16s;
-            animation-delay: 8s;
-        }
-
-        .bubble:nth-child(6) {
-            left: 80%;
-            width: 40px;
-            height: 40px;
-            background-color: rgba(255, 102, 0, 0.5);
-            animation-duration: 20s;
-            animation-delay: 10s;
-        }
-
-        .bubble:nth-child(7) {
-            left: 20%;
-            width: 50px;
-            height: 50px;
-            background-color: rgba(255, 102, 0, 0.4);
-            animation-duration: 22s;
-            animation-delay: 12s;
-        }
-
-        .bubble:nth-child(8) {
-            left: 40%;
-            width: 35px;
-            height: 35px;
-            background-color: rgba(255, 102, 0, 0.6);
-            animation-duration: 24s;
-            animation-delay: 14s;
-        }
-
-        .bubble:nth-child(9) {
-            left: 60%;
-            width: 25px;
-            height: 25px;
-            background-color: rgba(255, 102, 0, 0.5);
-            animation-duration: 26s;
-            animation-delay: 16s;
-        }
-
-        .bubble:nth-child(10) {
-            left: 80%;
-            width: 45px;
-            height: 45px;
-            background-color: rgba(255, 102, 0, 0.4);
-            animation-duration: 28s;
-            animation-delay: 18s;
-        }
-
-        @keyframes bubbleAnimation {
+        @keyframes gradientAnimation {
             0% {
-                bottom: -100px;
-                transform: translateX(0) scale(1);
-                opacity: 0.7;
+                background-position: 0% 0%;
             }
             50% {
-                transform: translateX(20px) scale(1.2);
-                opacity: 0.5;
+                background-position: 100% 100%;
             }
             100% {
-                bottom: 100%;
-                transform: translateX(-20px) scale(1);
-                opacity: 0;
+                background-position: 0% 0%;
             }
         }
     </style>
@@ -287,18 +191,6 @@
     <!-- Button to open the side menu -->
     <button class="open-side-menu-btn" onclick="openSideMenu()">Collection</button>
 
-    <!-- Bubble Animation -->
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-
     <main>
         <h2>My Printer/Automatic Hot Glue Gun</h2>
         <img src="https://raw.githubusercontent.com/RadioactiveWindmill/RadioactiveWindmill.github.io/main/Images/IMG-20240704-WA0016.jpg" alt="X1C">
@@ -330,3 +222,4 @@
     </script>
 </body>
 </html>
+
