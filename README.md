@@ -154,53 +154,105 @@
             height: 40px;
             background-color: rgba(255, 102, 0, 0.6);
             border-radius: 50%;
-            animation: bubbleAnimation 15s infinite ease-in;
-            opacity: 0.8;
+            opacity: 0.7;
+            animation: bubbleAnimation 15s infinite ease-in-out;
         }
 
         .bubble:nth-child(2) {
-            left: 20%;
+            left: 10%;
             width: 60px;
             height: 60px;
+            background-color: rgba(255, 102, 0, 0.5);
             animation-duration: 18s;
             animation-delay: 2s;
         }
 
         .bubble:nth-child(3) {
-            left: 40%;
-            width: 20px;
-            height: 20px;
-            animation-duration: 10s;
+            left: 30%;
+            width: 30px;
+            height: 30px;
+            background-color: rgba(255, 102, 0, 0.4);
+            animation-duration: 12s;
             animation-delay: 4s;
         }
 
         .bubble:nth-child(4) {
-            left: 60%;
+            left: 50%;
             width: 50px;
             height: 50px;
-            animation-duration: 12s;
+            background-color: rgba(255, 102, 0, 0.3);
+            animation-duration: 14s;
             animation-delay: 6s;
         }
 
         .bubble:nth-child(5) {
-            left: 80%;
-            width: 30px;
-            height: 30px;
-            animation-duration: 20s;
+            left: 70%;
+            width: 20px;
+            height: 20px;
+            background-color: rgba(255, 102, 0, 0.6);
+            animation-duration: 16s;
             animation-delay: 8s;
+        }
+
+        .bubble:nth-child(6) {
+            left: 80%;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 102, 0, 0.5);
+            animation-duration: 20s;
+            animation-delay: 10s;
+        }
+
+        .bubble:nth-child(7) {
+            left: 20%;
+            width: 50px;
+            height: 50px;
+            background-color: rgba(255, 102, 0, 0.4);
+            animation-duration: 22s;
+            animation-delay: 12s;
+        }
+
+        .bubble:nth-child(8) {
+            left: 40%;
+            width: 35px;
+            height: 35px;
+            background-color: rgba(255, 102, 0, 0.6);
+            animation-duration: 24s;
+            animation-delay: 14s;
+        }
+
+        .bubble:nth-child(9) {
+            left: 60%;
+            width: 25px;
+            height: 25px;
+            background-color: rgba(255, 102, 0, 0.5);
+            animation-duration: 26s;
+            animation-delay: 16s;
+        }
+
+        .bubble:nth-child(10) {
+            left: 80%;
+            width: 45px;
+            height: 45px;
+            background-color: rgba(255, 102, 0, 0.4);
+            animation-duration: 28s;
+            animation-delay: 18s;
         }
 
         @keyframes bubbleAnimation {
             0% {
                 bottom: -100px;
                 transform: translateX(0) scale(1);
+                opacity: 0.7;
             }
             50% {
                 transform: translateX(20px) scale(1.2);
+                opacity: 0.5;
             }
             100% {
                 bottom: 100%;
-                transform: translateX(-30px) scale(1);
+                transform: translateX(-20px) scale(1);
+                opacity: 0;
             }
         }
     </style>
@@ -221,52 +273,6 @@
 
     <!-- Side Menu -->
     <div id="side-menu" class="side-menu">
-        <a href="javascript:void(0)" class="close-btn" onclick="closeSideMenu()">&times;</a>
-        <a href="#">Link 1</a>
-        <a href="#">Link 2</a>
-        <a href="#">Link 3</a>
-        <a href="#">Link 4</a>
-        <a href="#">Link 5</a>
-        <a href="#">Link 6</a>
-        <a href="#">Link 7</a>
-        <a href="#">Link 8</a>
-    </div>
+        <a href="javascript:void(
 
-    <!-- Button to open the side menu -->
-    <button class="open-side-menu-btn" onclick="openSideMenu()">Collection</button>
-
-    <!-- Bubble Animation -->
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-
-    <main>
-        <h2>My Printer/Automatic Hot Glue Gun</h2>
-        <img src="https://raw.githubusercontent.com/RadioactiveWindmill/RadioactiveWindmill.github.io/main/Images/IMG-20240704-WA0016.jpg" alt="X1C">
-        <h2>Profile Picture</h2>
-        <img src="https://raw.githubusercontent.com/RadioactiveWindmill/RadioactiveWindmill.github.io/main/Images/IMG_7550.png" alt="Profile Picture">
-    </main>
-
-    <footer>
-        <p>&copy; 2024 RadioactiveWindmill. All rights reserved.</p>
-    </footer>
-
-    <script>
-        function toggleMenu() {
-            var menuContent = document.getElementById("menu-content");
-            if (menuContent.style.display === "block") {
-                menuContent.style.display = "none";
-            } else {
-                menuContent.style.display = "block";
-            }
-        }
-
-        function openSideMenu() {
-            document.getElementById("side-menu").style.width = "250px";
-        }
-
-        function closeSideMenu() {
-            document.getElementById("side
 
