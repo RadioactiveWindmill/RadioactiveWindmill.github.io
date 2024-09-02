@@ -76,6 +76,8 @@
             overflow-x: hidden;
             transition: 0.5s;
             padding-top: 60px;
+            /* Fixed position for the side menu */
+            position: fixed;
         }
         .side-menu a {
             padding: 15px 25px;
@@ -178,7 +180,7 @@
     <!-- Side Menu -->
     <div id="side-menu" class="side-menu">
         <a href="javascript:void(0)" class="close-btn" onclick="closeSideMenu()">&times;</a>
-        <a href="#">Link 1</a>
+        <a href="/lonx">My Lonx</a>
         <a href="#">Link 2</a>
         <a href="#">Link 3</a>
         <a href="#">Link 4</a>
@@ -222,4 +224,3 @@
     </script>
 </body>
 </html>
-
