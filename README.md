@@ -43,5 +43,57 @@
             text-align: center;
         }
         img {
-            max-width:
+            max-width: 100%;
+            height: auto;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+<body>
+    <header>
+        <h1>Welcome, find my Links here!</h1>
+    </header>
+
+    <nav>
+        <h3>Contact me on discord for questions and tips: Vliegtuigje aka Space</h3>
+        <button class="menu-btn" onclick="toggleMenu()">Menu</button>
+        <div id="menu-content" class="menu-content">
+            <a href="https://www.printables.com/@radio_windmil_870141/models">Link 1 - Printables</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            <a href="#">Link 4</a>
+        </div>
+    </nav>
+
+    <main>
+        <h2>My printer/automatic hot glue gun</h2>
+        <img src="https://raw.githubusercontent.com/RadioactiveWindmill/RadioactiveWindmill.github.io/main/Images/IMG-20240704-WA0016.jpg" alt="X1C">
+        <h2>Profile picture</h2>
+        <img src="https://raw.githubusercontent.com/RadioactiveWindmill/RadioactiveWindmill.github.io/main/Images/IMG_7550.png" alt="Profile picture">
+    </main>
+
+    <footer>
+        <p>Footer Content</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var menuContent = document.getElementById("menu-content");
+            if (menuContent.style.display === "block") {
+                menuContent.style.display = "none";
+            } else {
+                menuContent.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
+
 
