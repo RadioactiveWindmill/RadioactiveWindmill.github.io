@@ -1,8 +1,9 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <title>Main Website</title>
     <style>
         body {
             font-family: 'Helvetica Neue', Arial, sans-serif;
@@ -24,10 +25,12 @@
             text-align: center;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
         }
+
         h1 {
             margin: 0;
             font-size: 2.5em;
         }
+
         .menu-btn {
             background-color: #333;
             color: white;
@@ -41,9 +44,11 @@
             border-bottom: 1px solid #555;
             transition: background-color 0.3s ease;
         }
+
         .menu-btn:hover {
             background-color: #444;
         }
+
         .menu-content {
             display: none;
             background-color: #333;
@@ -51,6 +56,7 @@
             transition: max-height 0.3s ease-out;
             border-bottom: 1px solid #444;
         }
+
         .menu-content a {
             display: block;
             padding: 15px;
@@ -60,11 +66,11 @@
             border-bottom: 1px solid #444;
             transition: background-color 0.3s ease;
         }
+
         .menu-content a:hover {
             background-color: #444;
         }
 
-        /* Left-side collapsible menu */
         .side-menu {
             height: 100%;
             width: 250px;
@@ -76,7 +82,9 @@
             padding-top: 60px;
             z-index: 1;
             transition: width 0.5s ease;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
         }
+
         .side-menu a {
             padding: 15px 25px;
             text-decoration: none;
@@ -85,9 +93,11 @@
             display: block;
             transition: 0.3s;
         }
+
         .side-menu a:hover {
             background-color: #444;
         }
+
         .side-menu .close-btn {
             position: absolute;
             top: 10px;
@@ -95,7 +105,9 @@
             font-size: 36px;
             margin-left: 50px;
             color: #ff6600;
+            cursor: pointer;
         }
+
         .open-side-menu-btn {
             font-size: 20px;
             cursor: pointer;
@@ -109,9 +121,11 @@
             left: 10px;
             z-index: 2;
         }
+
         .open-side-menu-btn.hidden {
             display: none;
         }
+
         .open-side-menu-btn:hover {
             background-color: #555;
         }
@@ -127,11 +141,13 @@
             position: relative;
             z-index: 1;
         }
+
         main h2 {
             color: #ff6600;
             margin-bottom: 20px;
             font-size: 2em;
         }
+
         img {
             max-width: 80%;
             height: auto;
@@ -161,7 +177,7 @@
     <nav>
         <button class="menu-btn" onclick="toggleMenu()">Explore My Projects</button>
         <div id="menu-content" class="menu-content">
-            <a href="https://www.printables.com/@radio_windmil_870141/models">Link 1 - Printables</a>
+            <a href="https://www.printables.com/@radio_windmil_870141/models">Printables</a>
             <a href="https://www.printables.com/model/785737-40-max-shell-40max-nerf-shells-the-stamppot-shells">40max Shell Project</a>
             <a href="#">Link 3</a>
             <a href="#">Link 4</a>
@@ -172,7 +188,7 @@
     <div id="side-menu" class="side-menu">
         <a href="javascript:void(0)" class="close-btn" onclick="closeSideMenu()">&times;</a>
         <a href="#">Link 1</a>
-        <a href="/lonx">My Lonx</a>
+        <a href="/lonx">My Lonx</a> <!-- Updated link to the /lonx subdomain -->
         <a href="#">Link 3</a>
         <a href="#">Link 4</a>
         <a href="#">Link 5</a>
@@ -220,4 +236,5 @@
     </script>
 </body>
 </html>
+
 
