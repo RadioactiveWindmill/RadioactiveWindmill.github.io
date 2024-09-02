@@ -4,12 +4,21 @@
             font-family: 'Helvetica Neue', Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background: linear-gradient(45deg, #004080, #1a73e8, #004080);
+            background-size: 400% 400%;
+            animation: gradientAnimation 15s ease infinite;
             color: #333;
             line-height: 1.6;
         }
+
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
         header {
-            background-color: #004080;
+            background-color: rgba(0, 0, 0, 0.7);
             color: white;
             padding: 20px 0;
             text-align: center;
@@ -20,7 +29,7 @@
             font-size: 2.5em;
         }
         nav {
-            background-color: #333;
+            background-color: rgba(0, 0, 0, 0.7);
             color: white;
         }
         .menu-btn {
@@ -61,10 +70,11 @@
         main {
             padding: 40px;
             text-align: center;
-            background-color: #fff;
+            background-color: rgba(255, 255, 255, 0.9);
             max-width: 1200px;
             margin: 20px auto;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
         }
         main h2 {
             color: #004080;
@@ -79,7 +89,7 @@
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
         footer {
-            background-color: #004080;
+            background-color: rgba(0, 0, 0, 0.7);
             color: white;
             text-align: center;
             padding: 20px 0;
