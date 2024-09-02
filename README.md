@@ -67,6 +67,56 @@
         .menu-content a:hover {
             background-color: #444;
         }
+
+        /* Left-side collapsible menu */
+        .side-menu {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #333;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+        .side-menu a {
+            padding: 15px 25px;
+            text-decoration: none;
+            font-size: 22px;
+            color: #ff6600;
+            display: block;
+            transition: 0.3s;
+        }
+        .side-menu a:hover {
+            background-color: #444;
+        }
+        .side-menu .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+            color: #ff6600;
+        }
+        .open-side-menu-btn {
+            font-size: 20px;
+            cursor: pointer;
+            background-color: #444;
+            color: white;
+            padding: 15px 20px;
+            border: none;
+            transition: background-color 0.3s ease;
+            position: fixed;
+            top: 60px;
+            left: 10px;
+            z-index: 2;
+        }
+        .open-side-menu-btn:hover {
+            background-color: #555;
+        }
+
         main {
             padding: 40px;
             text-align: center;
@@ -115,6 +165,22 @@
         </div>
     </nav>
 
+    <!-- Side Menu -->
+    <div id="side-menu" class="side-menu">
+        <a href="javascript:void(0)" class="close-btn" onclick="closeSideMenu()">&times;</a>
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+        <a href="#">Link 4</a>
+        <a href="#">Link 5</a>
+        <a href="#">Link 6</a>
+        <a href="#">Link 7</a>
+        <a href="#">Link 8</a>
+    </div>
+
+    <!-- Button to open the side menu -->
+    <button class="open-side-menu-btn" onclick="openSideMenu()">Collection</button>
+
     <main>
         <h2>My Printer/Automatic Hot Glue Gun</h2>
         <img src="https://raw.githubusercontent.com/RadioactiveWindmill/RadioactiveWindmill.github.io/main/Images/IMG-20240704-WA0016.jpg" alt="X1C">
@@ -135,7 +201,14 @@
                 menuContent.style.display = "block";
             }
         }
+
+        function openSideMenu() {
+            document.getElementById("side-menu").style.width = "250px";
+        }
+
+        function closeSideMenu() {
+            document.getElementById("side-menu").style.width = "0";
+        }
     </script>
 </body>
 </html>
-
